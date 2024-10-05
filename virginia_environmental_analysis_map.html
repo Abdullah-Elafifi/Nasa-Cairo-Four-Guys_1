@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ab2a9cc8a67c86aabeca6ed76d72919a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    <script>
+function simulateScenario(lat, lng) {
+    // Dummy simulation logic
+    var emissionsIncrease = Math.floor(Math.random() * 100) + 1; // Random increase
+    alert(`Simulated emissions increase of ${emissionsIncrease} tons at (${lat}, ${lng})`);
+}
+</script>
+    
+            <div class="folium-map" id="map_ab2a9cc8a67c86aabeca6ed76d72919a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ab2a9cc8a67c86aabeca6ed76d72919a = L.map(
+                "map_ab2a9cc8a67c86aabeca6ed76d72919a",
+                {
+                    center: [37.5, -79.5],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e1300e8fad0574f52fcb72a0f280622b = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_e1300e8fad0574f52fcb72a0f280622b.addTo(map_ab2a9cc8a67c86aabeca6ed76d72919a);
+        
+    
+            var marker_f3be9c6dc191bf39a2556e9d4596f2c8 = L.marker(
+                [36.579, -76.3444],
+                {}
+            ).addTo(map_ab2a9cc8a67c86aabeca6ed76d72919a);
+        
+    
+        var popup_3cfb3709212677583d9dc027c18438ca = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3434fa74a2047e2b22e267cefc0e3141 = $(`<div id="html_3434fa74a2047e2b22e267cefc0e3141" style="width: 100.0%; height: 100.0%;">     <b>Location:</b> (36.579, -76.3444)<br>     <b>Historical Emissions:</b> [110]<br>     <b>Environmental Impact Score:</b> 110.00<br>     <b>Facility Scenario:</b> Solar Panels<br>     <button onclick="simulateScenario(36.579, -76.3444)">Simulate Scenario</button>     </div>`)[0];
+                popup_3cfb3709212677583d9dc027c18438ca.setContent(html_3434fa74a2047e2b22e267cefc0e3141);
+            
+        
+
+        marker_f3be9c6dc191bf39a2556e9d4596f2c8.bindPopup(popup_3cfb3709212677583d9dc027c18438ca)
+        ;
+
+        
+    
+    
+            var marker_b17e66dc785659225354cca5f9dca12d = L.marker(
+                [36.6734, -79.9594],
+                {}
+            ).addTo(map_ab2a9cc8a67c86aabeca6ed76d72919a);
+        
+    
+        var popup_63262d8cb22ad7da6613644fcb5d964d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8976bcb16f47750f80a4531a27be1de0 = $(`<div id="html_8976bcb16f47750f80a4531a27be1de0" style="width: 100.0%; height: 100.0%;">     <b>Location:</b> (36.6734, -79.9594)<br>     <b>Historical Emissions:</b> [135]<br>     <b>Environmental Impact Score:</b> 135.00<br>     <b>Facility Scenario:</b> Solar Panels<br>     <button onclick="simulateScenario(36.6734, -79.9594)">Simulate Scenario</button>     </div>`)[0];
+                popup_63262d8cb22ad7da6613644fcb5d964d.setContent(html_8976bcb16f47750f80a4531a27be1de0);
+            
+        
+
+        marker_b17e66dc785659225354cca5f9dca12d.bindPopup(popup_63262d8cb22ad7da6613644fcb5d964d)
+        ;
+
+        
+    
+    
+            var marker_571c99212e08820d7d6c6ac9273f3747 = L.marker(
+                [36.703, -79.8138],
+                {}
+            ).addTo(map_ab2a9cc8a67c86aabeca6ed76d72919a);
+        
+    
+        var popup_f23a2026af5e775ba15ffcf4215c3a3d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_35bde91b709e39943cff4bd0b51b58b7 = $(`<div id="html_35bde91b709e39943cff4bd0b51b58b7" style="width: 100.0%; height: 100.0%;">     <b>Location:</b> (36.703, -79.8138)<br>     <b>Historical Emissions:</b> [190]<br>     <b>Environmental Impact Score:</b> 190.00<br>     <b>Facility Scenario:</b> Factory<br>     <button onclick="simulateScenario(36.703, -79.8138)">Simulate Scenario</button>     </div>`)[0];
+                popup_f23a2026af5e775ba15ffcf4215c3a3d.setContent(html_35bde91b709e39943cff4bd0b51b58b7);
+            
+        
+
+        marker_571c99212e08820d7d6c6ac9273f3747.bindPopup(popup_f23a2026af5e775ba15ffcf4215c3a3d)
+        ;
+
+        
+    
+    
+            var marker_c005fec8ab1edd6e3c37fedb107e1489 = L.marker(
+                [36.7783, -79.4413],
+                {}
+            ).addTo(map_ab2a9cc8a67c86aabeca6ed76d72919a);
+        
+    
+        var popup_c78160a84eaa6e6deccf47932bf869b0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6e8c23aa5cb11006550c1204563c4834 = $(`<div id="html_6e8c23aa5cb11006550c1204563c4834" style="width: 100.0%; height: 100.0%;">     <b>Location:</b> (36.7783, -79.4413)<br>     <b>Historical Emissions:</b> [95]<br>     <b>Environmental Impact Score:</b> 95.00<br>     <b>Facility Scenario:</b> Factory<br>     <button onclick="simulateScenario(36.7783, -79.4413)">Simulate Scenario</button>     </div>`)[0];
+                popup_c78160a84eaa6e6deccf47932bf869b0.setContent(html_6e8c23aa5cb11006550c1204563c4834);
+            
+        
+
+        marker_c005fec8ab1edd6e3c37fedb107e1489.bindPopup(popup_c78160a84eaa6e6deccf47932bf869b0)
+        ;
+
+        
+    
+    
+            var marker_bd68734f0097e66f6b4f0713905b81b1 = L.marker(
+                [36.8508, -76.2859],
+                {}
+            ).addTo(map_ab2a9cc8a67c86aabeca6ed76d72919a);
+        
+    
+        var popup_8c884261525c94e80944da60ad0a8bc7 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_29aa37d4fad031f55f731a7f17adaa26 = $(`<div id="html_29aa37d4fad031f55f731a7f17adaa26" style="width: 100.0%; height: 100.0%;">     <b>Location:</b> (36.8508, -76.2859)<br>     <b>Historical Emissions:</b> [200]<br>     <b>Environmental Impact Score:</b> 200.00<br>     <b>Facility Scenario:</b> Transportation<br>     <button onclick="simulateScenario(36.8508, -76.2859)">Simulate Scenario</button>     </div>`)[0];
+                popup_8c884261525c94e80944da60ad0a8bc7.setContent(html_29aa37d4fad031f55f731a7f17adaa26);
+            
+        
+
+        marker_bd68734f0097e66f6b4f0713905b81b1.bindPopup(popup_8c884261525c94e80944da60ad0a8bc7)
+        ;
+
+        
+    
+    
+            var marker_7f55470b3fee60ec59055815a202ad5b = L.marker(
+                [36.982, -80.0564],
+                {}
+            ).addTo(map_ab2a9cc8a67c86aabeca6ed76d72919a);
+        
+    
+        var popup_96b05e11307fcdc9e91290374499d84f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d8f50e383f47217e2e053cd381f9f44b = $(`<div id="html_d8f50e383f47217e2e053cd381f9f44b" style="width: 100.0%; height: 100.0%;">     <b>Location:</b> (36.982, -80.0564)<br>     <b>Historical Emissions:</b> [145]<br>     <b>Environmental Impact Score:</b> 145.00<br>     <b>Facility Scenario:</b> Solar Panels<br>     <button onclick="simulateScenario(36.982, -80.0564)">Simulate Scenario</button>     </div>`)[0];
+                popup_96b05e11307fcdc9e91290374499d84f.setContent(html_d8f50e383f47217e2e053cd381f9f44b);
+            
+        
+
+        marker_7f55470b3fee60ec59055815a202ad5b.bindPopup(popup_96b05e11307fcdc9e91290374499d84f)
+        ;
+
+        
+    
+    
+            var marker_0bdcb80f655bb4761ce7480d1cf88fa4 = L.marker(
+                [37.2732, -76.6748],
+                {}
+            ).addTo(map_ab2a9cc8a67c86aabeca6ed76d72919a);
+        
+    
+        var popup_b0c4e32175cb64cb8ffe722def610cd5 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b287aacee3abf73af66bf1c4d69177b1 = $(`<div id="html_b287aacee3abf73af66bf1c4d69177b1" style="width: 100.0%; height: 100.0%;">     <b>Location:</b> (37.2732, -76.6748)<br>     <b>Historical Emissions:</b> [80]<br>     <b>Environmental Impact Score:</b> 80.00<br>     <b>Facility Scenario:</b> Solar Panels<br>     <button onclick="simulateScenario(37.2732, -76.6748)">Simulate Scenario</button>     </div>`)[0];
+                popup_b0c4e32175cb64cb8ffe722def610cd5.setContent(html_b287aacee3abf73af66bf1c4d69177b1);
+            
+        
+
+        marker_0bdcb80f655bb4761ce7480d1cf88fa4.bindPopup(popup_b0c4e32175cb64cb8ffe722def610cd5)
+        ;
+
+        
+    
+    
+            var marker_06951ef0db52ec3dff2ee13bf5140a3a = L.marker(
+                [37.4147, -79.1747],
+                {}
+            ).addTo(map_ab2a9cc8a67c86aabeca6ed76d72919a);
+        
+    
+        var popup_a238c03cb549c68089b90e144fe6367d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_75f2bb01375a100db8c3db6a7d9b5ff6 = $(`<div id="html_75f2bb01375a100db8c3db6a7d9b5ff6" style="width: 100.0%; height: 100.0%;">     <b>Location:</b> (37.4147, -79.1747)<br>     <b>Historical Emissions:</b> [85]<br>     <b>Environmental Impact Score:</b> 85.00<br>     <b>Facility Scenario:</b> Solar Panels<br>     <button onclick="simulateScenario(37.4147, -79.1747)">Simulate Scenario</button>     </div>`)[0];
+                popup_a238c03cb549c68089b90e144fe6367d.setContent(html_75f2bb01375a100db8c3db6a7d9b5ff6);
+            
+        
+
+        marker_06951ef0db52ec3dff2ee13bf5140a3a.bindPopup(popup_a238c03cb549c68089b90e144fe6367d)
+        ;
+
+        
+    
+    
+            var marker_2965ab0c277d370ca58af2a5da8b7b28 = L.marker(
+                [37.4316, -77.9738],
+                {}
+            ).addTo(map_ab2a9cc8a67c86aabeca6ed76d72919a);
+        
+    
+        var popup_54cb9b2345ded679302ef6e338d35c51 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a34d7fb72709ec9bd97a4019d7cd1a88 = $(`<div id="html_a34d7fb72709ec9bd97a4019d7cd1a88" style="width: 100.0%; height: 100.0%;">     <b>Location:</b> (37.4316, -77.9738)<br>     <b>Historical Emissions:</b> [120]<br>     <b>Environmental Impact Score:</b> 120.00<br>     <b>Facility Scenario:</b> Transportation<br>     <button onclick="simulateScenario(37.4316, -77.9738)">Simulate Scenario</button>     </div>`)[0];
+                popup_54cb9b2345ded679302ef6e338d35c51.setContent(html_a34d7fb72709ec9bd97a4019d7cd1a88);
+            
+        
+
+        marker_2965ab0c277d370ca58af2a5da8b7b28.bindPopup(popup_54cb9b2345ded679302ef6e338d35c51)
+        ;
+
+        
+    
+    
+            var marker_d1dd94b3868233543a18e58bda880618 = L.marker(
+                [37.4625, -79.8113],
+                {}
+            ).addTo(map_ab2a9cc8a67c86aabeca6ed76d72919a);
+        
+    
+        var popup_95d67d49d077226001774d4f18b0dea1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c21386839b2ceed669d1373cd6ca6b92 = $(`<div id="html_c21386839b2ceed669d1373cd6ca6b92" style="width: 100.0%; height: 100.0%;">     <b>Location:</b> (37.4625, -79.8113)<br>     <b>Historical Emissions:</b> [155]<br>     <b>Environmental Impact Score:</b> 155.00<br>     <b>Facility Scenario:</b> Transportation<br>     <button onclick="simulateScenario(37.4625, -79.8113)">Simulate Scenario</button>     </div>`)[0];
+                popup_95d67d49d077226001774d4f18b0dea1.setContent(html_c21386839b2ceed669d1373cd6ca6b92);
+            
+        
+
+        marker_d1dd94b3868233543a18e58bda880618.bindPopup(popup_95d67d49d077226001774d4f18b0dea1)
+        ;
+
+        
+    
+    
+            var marker_9d023a03b3dbe21964fdcb45254bf6ca = L.marker(
+                [37.4862, -77.9615],
+                {}
+            ).addTo(map_ab2a9cc8a67c86aabeca6ed76d72919a);
+        
+    
+        var popup_a6c2ab7293833dfa118b6505364b1af6 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c53ff444ae799ffe2e89e2aebad537f2 = $(`<div id="html_c53ff444ae799ffe2e89e2aebad537f2" style="width: 100.0%; height: 100.0%;">     <b>Location:</b> (37.4862, -77.9615)<br>     <b>Historical Emissions:</b> [150]<br>     <b>Environmental Impact Score:</b> 150.00<br>     <b>Facility Scenario:</b> Factory<br>     <button onclick="simulateScenario(37.4862, -77.9615)">Simulate Scenario</button>     </div>`)[0];
+                popup_a6c2ab7293833dfa118b6505364b1af6.setContent(html_c53ff444ae799ffe2e89e2aebad537f2);
+            
+        
+
+        marker_9d023a03b3dbe21964fdcb45254bf6ca.bindPopup(popup_a6c2ab7293833dfa118b6505364b1af6)
+        ;
+
+        
+    
+    
+            var marker_a72f1c00ffad3ab28e5c9bae9e873faf = L.marker(
+                [37.534, -79.9427],
+                {}
+            ).addTo(map_ab2a9cc8a67c86aabeca6ed76d72919a);
+        
+    
+        var popup_5872ff9411aaa4eaf88fadd2b3338280 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_67510b5f66be4ef15cce0efba83351d7 = $(`<div id="html_67510b5f66be4ef15cce0efba83351d7" style="width: 100.0%; height: 100.0%;">     <b>Location:</b> (37.534, -79.9427)<br>     <b>Historical Emissions:</b> [160]<br>     <b>Environmental Impact Score:</b> 160.00<br>     <b>Facility Scenario:</b> Factory<br>     <button onclick="simulateScenario(37.534, -79.9427)">Simulate Scenario</button>     </div>`)[0];
+                popup_5872ff9411aaa4eaf88fadd2b3338280.setContent(html_67510b5f66be4ef15cce0efba83351d7);
+            
+        
+
+        marker_a72f1c00ffad3ab28e5c9bae9e873faf.bindPopup(popup_5872ff9411aaa4eaf88fadd2b3338280)
+        ;
+
+        
+    
+    
+            var marker_64b05b80b7ed76ba1c99f0d639944b47 = L.marker(
+                [37.5365, -77.3301],
+                {}
+            ).addTo(map_ab2a9cc8a67c86aabeca6ed76d72919a);
+        
+    
+        var popup_d3996c5826575d5d6cc77fa5b123f4b1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_fa02adf0667c31d95253421903506f10 = $(`<div id="html_fa02adf0667c31d95253421903506f10" style="width: 100.0%; height: 100.0%;">     <b>Location:</b> (37.5365, -77.3301)<br>     <b>Historical Emissions:</b> [120]<br>     <b>Environmental Impact Score:</b> 120.00<br>     <b>Facility Scenario:</b> Factory<br>     <button onclick="simulateScenario(37.5365, -77.3301)">Simulate Scenario</button>     </div>`)[0];
+                popup_d3996c5826575d5d6cc77fa5b123f4b1.setContent(html_fa02adf0667c31d95253421903506f10);
+            
+        
+
+        marker_64b05b80b7ed76ba1c99f0d639944b47.bindPopup(popup_d3996c5826575d5d6cc77fa5b123f4b1)
+        ;
+
+        
+    
+    
+            var marker_b98e6c7664de720593f24ef194dfb228 = L.marker(
+                [37.5576, -77.4229],
+                {}
+            ).addTo(map_ab2a9cc8a67c86aabeca6ed76d72919a);
+        
+    
+        var popup_7b730eb10d351e0d948794cc5a421cfa = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_af2be0f0cfdf141f26788e86197d6d13 = $(`<div id="html_af2be0f0cfdf141f26788e86197d6d13" style="width: 100.0%; height: 100.0%;">     <b>Location:</b> (37.5576, -77.4229)<br>     <b>Historical Emissions:</b> [140]<br>     <b>Environmental Impact Score:</b> 140.00<br>     <b>Facility Scenario:</b> Solar Panels<br>     <button onclick="simulateScenario(37.5576, -77.4229)">Simulate Scenario</button>     </div>`)[0];
+                popup_7b730eb10d351e0d948794cc5a421cfa.setContent(html_af2be0f0cfdf141f26788e86197d6d13);
+            
+        
+
+        marker_b98e6c7664de720593f24ef194dfb228.bindPopup(popup_7b730eb10d351e0d948794cc5a421cfa)
+        ;
+
+        
+    
+    
+            var marker_8f9e2df22d33a7750e8b622e0ba84a00 = L.marker(
+                [37.74, -77.4343],
+                {}
+            ).addTo(map_ab2a9cc8a67c86aabeca6ed76d72919a);
+        
+    
+        var popup_9c5876a325c4337ab841cb4ba973a7b5 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3eb71f35982960ab845f987e3c8581b6 = $(`<div id="html_3eb71f35982960ab845f987e3c8581b6" style="width: 100.0%; height: 100.0%;">     <b>Location:</b> (37.74, -77.4343)<br>     <b>Historical Emissions:</b> [130]<br>     <b>Environmental Impact Score:</b> 130.00<br>     <b>Facility Scenario:</b> Transportation<br>     <button onclick="simulateScenario(37.74, -77.4343)">Simulate Scenario</button>     </div>`)[0];
+                popup_9c5876a325c4337ab841cb4ba973a7b5.setContent(html_3eb71f35982960ab845f987e3c8581b6);
+            
+        
+
+        marker_8f9e2df22d33a7750e8b622e0ba84a00.bindPopup(popup_9c5876a325c4337ab841cb4ba973a7b5)
+        ;
+
+        
+    
+    
+            var marker_d5d5639f9b81ba95a9cd0bac1a623cb9 = L.marker(
+                [37.7749, -78.1034],
+                {}
+            ).addTo(map_ab2a9cc8a67c86aabeca6ed76d72919a);
+        
+    
+        var popup_c19cf3a867cf5cb35a38bf28d77d1f3a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4ffae8f873d486b4148a69883ccdf808 = $(`<div id="html_4ffae8f873d486b4148a69883ccdf808" style="width: 100.0%; height: 100.0%;">     <b>Location:</b> (37.7749, -78.1034)<br>     <b>Historical Emissions:</b> [90]<br>     <b>Environmental Impact Score:</b> 90.00<br>     <b>Facility Scenario:</b> Solar Panels<br>     <button onclick="simulateScenario(37.7749, -78.1034)">Simulate Scenario</button>     </div>`)[0];
+                popup_c19cf3a867cf5cb35a38bf28d77d1f3a.setContent(html_4ffae8f873d486b4148a69883ccdf808);
+            
+        
+
+        marker_d5d5639f9b81ba95a9cd0bac1a623cb9.bindPopup(popup_c19cf3a867cf5cb35a38bf28d77d1f3a)
+        ;
+
+        
+    
+    
+            var marker_1845838d38e3d84887e4c0529ba4c305 = L.marker(
+                [37.793, -77.1444],
+                {}
+            ).addTo(map_ab2a9cc8a67c86aabeca6ed76d72919a);
+        
+    
+        var popup_9a0c3bc58b5af1c85fe06b8ffea9246f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_18065f83e728783a07d93c5fd91b8efe = $(`<div id="html_18065f83e728783a07d93c5fd91b8efe" style="width: 100.0%; height: 100.0%;">     <b>Location:</b> (37.793, -77.1444)<br>     <b>Historical Emissions:</b> [175]<br>     <b>Environmental Impact Score:</b> 175.00<br>     <b>Facility Scenario:</b> Transportation<br>     <button onclick="simulateScenario(37.793, -77.1444)">Simulate Scenario</button>     </div>`)[0];
+                popup_9a0c3bc58b5af1c85fe06b8ffea9246f.setContent(html_18065f83e728783a07d93c5fd91b8efe);
+            
+        
+
+        marker_1845838d38e3d84887e4c0529ba4c305.bindPopup(popup_9a0c3bc58b5af1c85fe06b8ffea9246f)
+        ;
+
+        
+    
+    
+            var marker_0d8b3ffcbc370453f78c7f90103e763f = L.marker(
+                [37.8181, -77.4229],
+                {}
+            ).addTo(map_ab2a9cc8a67c86aabeca6ed76d72919a);
+        
+    
+        var popup_87ef24c78fdba8322132cc031707b5c3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5f799203936f9c38443bba1c39bcb650 = $(`<div id="html_5f799203936f9c38443bba1c39bcb650" style="width: 100.0%; height: 100.0%;">     <b>Location:</b> (37.8181, -77.4229)<br>     <b>Historical Emissions:</b> [125]<br>     <b>Environmental Impact Score:</b> 125.00<br>     <b>Facility Scenario:</b> Solar Panels<br>     <button onclick="simulateScenario(37.8181, -77.4229)">Simulate Scenario</button>     </div>`)[0];
+                popup_87ef24c78fdba8322132cc031707b5c3.setContent(html_5f799203936f9c38443bba1c39bcb650);
+            
+        
+
+        marker_0d8b3ffcbc370453f78c7f90103e763f.bindPopup(popup_87ef24c78fdba8322132cc031707b5c3)
+        ;
+
+        
+    
+    
+            var marker_3d7874b29f99cfed89c88ba00bca2425 = L.marker(
+                [38.0293, -78.4784],
+                {}
+            ).addTo(map_ab2a9cc8a67c86aabeca6ed76d72919a);
+        
+    
+        var popup_f01b3ad05648aa760fa284a611276880 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_717e189398b99875cd9d844a1aa67236 = $(`<div id="html_717e189398b99875cd9d844a1aa67236" style="width: 100.0%; height: 100.0%;">     <b>Location:</b> (38.0293, -78.4784)<br>     <b>Historical Emissions:</b> [90]<br>     <b>Environmental Impact Score:</b> 90.00<br>     <b>Facility Scenario:</b> Solar Panels<br>     <button onclick="simulateScenario(38.0293, -78.4784)">Simulate Scenario</button>     </div>`)[0];
+                popup_f01b3ad05648aa760fa284a611276880.setContent(html_717e189398b99875cd9d844a1aa67236);
+            
+        
+
+        marker_3d7874b29f99cfed89c88ba00bca2425.bindPopup(popup_f01b3ad05648aa760fa284a611276880)
+        ;
+
+        
+    
+    
+            var marker_4cbf8892c27c8d5628f74cf562f606f6 = L.marker(
+                [38.0368, -78.5206],
+                {}
+            ).addTo(map_ab2a9cc8a67c86aabeca6ed76d72919a);
+        
+    
+        var popup_86db1bdc1fa11fe283864937c7c1dd5f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f51def91b2392da7c3a924f2db971866 = $(`<div id="html_f51def91b2392da7c3a924f2db971866" style="width: 100.0%; height: 100.0%;">     <b>Location:</b> (38.0368, -78.5206)<br>     <b>Historical Emissions:</b> [165]<br>     <b>Environmental Impact Score:</b> 165.00<br>     <b>Facility Scenario:</b> Factory<br>     <button onclick="simulateScenario(38.0368, -78.5206)">Simulate Scenario</button>     </div>`)[0];
+                popup_86db1bdc1fa11fe283864937c7c1dd5f.setContent(html_f51def91b2392da7c3a924f2db971866);
+            
+        
+
+        marker_4cbf8892c27c8d5628f74cf562f606f6.bindPopup(popup_86db1bdc1fa11fe283864937c7c1dd5f)
+        ;
+
+        
+    
+    
+            var marker_570b6d23fdd74e0239764e993707b8d9 = L.marker(
+                [38.4172, -77.7244],
+                {}
+            ).addTo(map_ab2a9cc8a67c86aabeca6ed76d72919a);
+        
+    
+        var popup_48e084490f5730dacbe0077eff814fb0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3df019e927e24fb13e7eccd43d0bf5c8 = $(`<div id="html_3df019e927e24fb13e7eccd43d0bf5c8" style="width: 100.0%; height: 100.0%;">     <b>Location:</b> (38.4172, -77.7244)<br>     <b>Historical Emissions:</b> [100]<br>     <b>Environmental Impact Score:</b> 100.00<br>     <b>Facility Scenario:</b> Factory<br>     <button onclick="simulateScenario(38.4172, -77.7244)">Simulate Scenario</button>     </div>`)[0];
+                popup_48e084490f5730dacbe0077eff814fb0.setContent(html_3df019e927e24fb13e7eccd43d0bf5c8);
+            
+        
+
+        marker_570b6d23fdd74e0239764e993707b8d9.bindPopup(popup_48e084490f5730dacbe0077eff814fb0)
+        ;
+
+        
+    
+</script>
+</html>
